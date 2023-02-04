@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="slideshow.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>enri's website</title>
 </head>
-<body>
-    <h1>Hello world</h1>
-    <input class="w3-button w3-black" type="button" value="Input Button">
-    <button class="w3-button w3-black">Button Button</button>
-    <a href="https://www.w3schools.com" class="w3-button w3-black">Link Button</a>
+<body onload="showSlides();">
 
-    <input class="w3-btn w3-black" type="button" value="Input Button">
-    <button class="w3-btn w3-black">Button Button</button>
-    <a href="https://www.w3schools.com" class="w3-btn w3-black">Link Button</a>
+    <div class="slideshow-container">
+    
+        <div class="mySlides fade">
+            <img src="fts/ft1.jpg" class="w3-image slideshow-image">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="fts/ft2.jpg" class="w3-image slideshow-image">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="fts/ft3.jpg" class="w3-image slideshow-image">
+        </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+    </div>
 </body>
 </html>
