@@ -116,3 +116,12 @@
 a {
   text-decoration: none;
 }
+.boton-tema{
+  margin: 15px;
+  border-radius: 5px;
+  background-color: #925fab;
+  border-color: transparent;
+}
+
+.tema{
+}

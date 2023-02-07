@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="osteo-ros.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Osteopatia Rosario</title>
+</head>
+<body onload="show_tema1()" style="background-color: #c3a0d2;">
+
+    <div class="w3-row w3-container header">
+        <div style="color: #925fab;" class="w3-quarter header-items">
+            <a href="osteo-ros.html"><h1>Carla Esquivel Osteopatia Rosario</h1></a>
+        </div>
+
+        <div class="w3-quarter header-items">
+            <a class="info-text" target= "_blank" href="https://goo.gl/maps/qMVN4h8JRkfJER42A">
+                <img class="icon" src="fts/locate-icon.svg"> Córdoba 954, S2000 AWL, Santa Fe
+            </a>
+        </div>
+
+        <div class="w3-quarter header-items">
+            <h1 class="info-text"><img class="icon" src="fts/clock-icon.svg"> Lun a Vier de 9:00 hs a 17:00 hs</h1>
+        </div>
+
+        <div class="w3-quarter header-items">
+            <div style="margin: 5px;">
+                <a class="info-text" target= "_blank" href="https://api.whatsapp.com/send/?phone=543415012668&text&type=phone_number&app_absent=0">
+                    <img class="icon" src="fts/whatsapp-icon.svg"> Escribime por cualquier consulta!
+                </a>
+            </div>
+            <div style="margin: 5px;">
+                <a class="info-text" target= "_blank" href="https://www.instagram.com/osteopatiarosario/">
+                    <img class="icon" src="fts/instagram-icon.svg"> Mi instagram
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="w3-row" style="margin: 15px;">
+        <div class="w3-third" style="width: 25%; border-radius: 3px; background-color: #7c518e; text-align: center;">
+            <button class="boton-tema" onclick="show_tema1()">Osteopatía Estructural</button>
+            <br>
+            <button class="boton-tema" onclick="show_tema2()">Osteopatía Craneal</button>
+            <br>
+            <button class="boton-tema" onclick="show_tema3()">Osteopatía Visceral</button>
+        </div>
+
+        <div id="tema1" class="w3-twothird tema">
+            <h1 style="margin: 25px;">primer titulo</h1>
+            <img src="fts/ft4-2.jpg">
+        </div>
+        <div id="tema2" class="w3-twothird tema">
+            <img src="fts/ft2-2.jpg">
+        </div>
+        <div id="tema3" class="w3-twothird tema">
+            <img src="fts/ft5-2.jpg">
+        </div>
+
+    </div>
+    
+    <script>
+        function show_tema1() {
+            var elem1 = document.getElementById("tema1");
+            var elem2 = document.getElementById("tema2");
+            var elem3 = document.getElementById("tema3");
+            
+            elem1.style.display = "block";
+            elem2.style.display = "none";
+            elem3.style.display = "none";
+        }
+        function show_tema2() {
+            var elem1 = document.getElementById("tema1");
+            var elem2 = document.getElementById("tema2");
+            var elem3 = document.getElementById("tema3");
+            
+            elem1.style.display = "none";
+            elem2.style.display = "block";
+            elem3.style.display = "none";
+        }
+        function show_tema3() {
+            var elem1 = document.getElementById("tema1");
+            var elem2 = document.getElementById("tema2");
+            var elem3 = document.getElementById("tema3");
+            
+            elem1.style.display = "none";
+            elem2.style.display = "none";
+            elem3.style.display = "block";
+        }
+    </script>
+</body>
