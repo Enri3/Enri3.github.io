@@ -95,16 +95,25 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-    background-color: #c3a0d2;
-    box-shadow: none;
+  background-color: #c3a0d2;
+  box-shadow: none;
 }
 
 .icon{
-    width: 15px;
+    width: 17px;
 }
 
 .header-items{
   margin: auto;
   text-align: center;
   box-shadow: none;
+}
+
+.info-text{
+  font-size: 20px;
+  font-family: serif;
+}
+
+a {
+  text-decoration: none;
 }

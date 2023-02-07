@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="test-style.css">
+    <link rel="stylesheet" href="osteo-ros.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,24 +11,32 @@
 <body>
 
     <div class="w3-container header">
-        <div class="header-items">
+        <div style="color: #925fab;" class="header-items">
             <h1>Carla Esquivel</h1>
             <h1>Osteopatia Rosario</h1>
         </div>
 
         <div class="header-items">
-            <img class="icon" src="fts/locate-icon.svg">
-            <a style="font-size: 15px;" href="https://goo.gl/maps/qMVN4h8JRkfJER42A">Córdoba 954, S2000 AWL, Santa Fe</a>
+            <a class="info-text" target= "_blank" href="https://goo.gl/maps/qMVN4h8JRkfJER42A">
+                <img class="icon" src="fts/locate-icon.svg"> Córdoba 954, S2000 AWL, Santa Fe
+            </a>
+        </div>
+
+        <div class="header-items" style="display: flex;">
+            <img class="icon" src="fts/clock-icon.svg"></img>
+            <h1 class="info-text" >Lun a Vier de 9:00 hs a 17:00 hs</h1>
         </div>
 
         <div class="header-items">
-            <img style="font-size: 15px;" class="icon" src="fts/clock-icon.svg"> Lun a Vier de 9:00 hs a 17:00 hs</img>
+            <a class="info-text" target= "_blank" href="https://api.whatsapp.com/send/?phone=543415012668&text&type=phone_number&app_absent=0">
+                <img class="icon" src="fts/whatsapp-icon.svg"> Escribime por cualquier consulta!
+            </a>
         </div>
 
         <div class="header-items">
-            <h1 style="font-size: 15px;">Mis redes</h1>
-            <a href="https://www.instagram.com/osteopatiarosario/"><img class="icon" src="fts/instagram-icon.svg"></a>
-            <a href="https://api.whatsapp.com/send/?phone=543415012668&text&type=phone_number&app_absent=0"><img class="icon" src="fts/whatsapp-icon.svg"></a>
+            <a class="info-text" target= "_blank" href="https://www.instagram.com/osteopatiarosario/">
+                <img class="icon" src="fts/instagram-icon.svg"> Mi instagram
+            </a>
         </div>
     </div>
 
@@ -59,7 +67,7 @@
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <br>
-    
+
     <!-- The dots/circles -->
     <div style="text-align:center">
         <span class="dot" onclick="currentSlide(1)"></span>
