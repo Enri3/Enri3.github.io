@@ -110,7 +110,6 @@
 
 .info-text{
   font-size: 20px;
-  font-family: serif;
 }
 
 a {
@@ -119,7 +118,7 @@ a {
 .boton-tema{
   margin: 15px;
   border-radius: 5px;
-  background-color: #925fab;
+  background-color: #b387c6;
   border-color: transparent;
 }
 
