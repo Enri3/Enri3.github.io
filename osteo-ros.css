@@ -122,5 +122,6 @@ a {
   border-color: transparent;
 }
 
-.tema{
+.boton-tema:hover{
+  background-color: #996aae;;
 }
