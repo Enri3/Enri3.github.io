@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>te amo candelita</title>
+	<link rel="stylesheet" href="ambrosia.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Koulen&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+
+<body style="background-color: #ffdebe">
+
+	<!-- Display -->
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+			<img class="slideshow-image" src="img/display/H7.JPG" style="width:100%">
+		</div>
+		<div class="mySlides fade">
+			<img class="slideshow-image" src="img/display/H4.JPG" style="width:100%">
+		</div>
+		<div class="mySlides fade">
+			<img class="slideshow-image" src="img/display/H3.JPG" style="width:100%">
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+	
+	<!-- Cartitas -->
+	<h1 class="recomendados"><b>- hola candelita -</b></h1>
+	<div class="w3-container container-general">
+        <div class="carta w3-card">
+        	<a class="card-link" href="com-suelta/brc.html" style="width: 33%;">
+            <img class="imagen" src="img/amiguis/16.JPG">
+            <h3>Nuestras primeras joditas</h3>
+            </a>
+        </div>
+        <div class="carta w3-card">
+            <a class="card-link" href="com-suelta/fideos-al-pesto.html">
+            <img class="imagen" src="img/1.jpg" alt="Fideos al Pesto">
+            <h3>Fideos al Pesto</h3>
+        	</a>
+        </div>
+        <div class="carta w3-card">
+            <a class="card-link" href="com-suelta/empanadas.html">
+            <img class="imagen" src="img/2.jpg" alt="Empanadas">
+            <h3>Empanadas</h3>
+        	</a>
+        </div>
+        <div class="carta w3-card">
+            <a class="card-link" href="com-suelta/pizza.html">
+            <img class="imagen" src="img/4.jpg" alt="Pizza">
+            <h3>Pizza</h3>
+            <p>Pizza de queso, tomate y aceituna (napolitana).</p>
+            </a>
+        </div>
+        <div class="carta w3-card">
+            <a class="card-link" href="com-suelta/gnocchi-de-papa.html">
+            <img class="imagen" src="img/5.jpg" alt="Ñoquis de Papa">
+            <h3>Ñoquis de Papa</h3>
+            <p>Esquisitos ñoquis de papa perfectos para un día de frío.</p>
+            </a>
+        </div>
+        <div class="carta w3-card">
+            <a class="card-link" href="com-suelta/fideos-hongos.html">
+            <img class="imagen" src="img/6.jpg" alt="Spaghetti con Salsa de Champiñones">
+            <h3>Fideos al champiñon</h3>
+            <p>Fideos spaghetti con salsa de champiñones.</p>
+            </a>
+        </div>
+	</div>
+
+	<div class="w3-container footer">
+		<b><p style="font-family: monospace; opacity: 80%; margin-top: 3%; margin: 2%;">como contactarnos</p></b>
+		<p style="opacity:65%; margin: 2%;"><img src="fotos/email2.jpg" alt="" width="3%;"></img> <b>contacto.ambrosia@gmail.com</b> </p>
+		<p style="opacity:65%; margin: 2%;">
+		<img src="fotos/instagram3.jpg" alt="" style="width: 3%;"></img>
+		<img src="fotos/facebook2.jpg" alt="" style="width: 3%;"></img>
+		<b>@redes.ambrosia</b>
+		</p>
+		<p style="opacity: 25%; font-weight: bold; margin: 2%;">ambrosia</p>
+	</div>
+
+	<script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            }
+    </script>
+</body>
+</html>
