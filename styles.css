@@ -176,3 +176,49 @@ animation-duration: 1s;
 	margin-top: 10%;
 	margin-bottom: 10%;
   }
+
+.carta-inicios{
+	width: 30%;
+  	text-align: center;
+  	border-radius: 10px;
+	padding: 30px;
+	margin-right: 1.5%;
+	margin-left: 1.5%;
+	margin-top: 3%;
+	margin-bottom: 2%;
+	background-color: #694a2a;
+}
+
+.recomendados-inicios{
+	font-family: "Garamond", serif, monospace;
+	background-color:  #694a2a;
+	text-align: center;
+	opacity: 90%;
+	margin-top: 3%;
+}
+
+.carta-festivales{
+	width: 30%;
+  	text-align: center;
+  	border-radius: 10px;
+	padding: 30px;
+	margin-right: 1.5%;
+	margin-left: 1.5%;
+	margin-top: 3%;
+	margin-bottom: 2%;
+	background-color: #030e60;
+}
+
+.recomendados-festivales{
+	font-family: "Garamond", serif, monospace;
+	background-color:  #030e60;
+	text-align: center;
+	opacity: 90%;
+	margin-top: 3%;
+	text-decoration-color: #9d1a1a;
+	color: #706e7a;
+}
+
+.text-festivales{
+	color: #706e7a;
+}
