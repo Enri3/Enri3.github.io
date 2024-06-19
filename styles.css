@@ -215,7 +215,6 @@ animation-duration: 1s;
 	text-align: center;
 	opacity: 90%;
 	margin-top: 3%;
-	text-decoration-color: #9d1a1a;
 	color: #706e7a;
 }
 
@@ -232,15 +231,38 @@ animation-duration: 1s;
 	margin-left: 1.5%;
 	margin-top: 3%;
 	margin-bottom: 2%;
-	background-color: #030e60;
+	background-color: #d6c93d;
 }
 
 .recomendados-comida{
 	font-family: "Garamond", serif, monospace;
-	background-color:  #030e60;
+	background-color:  #d6c93d;
 	text-align: center;
 	opacity: 90%;
 	margin-top: 3%;
-	text-decoration-color: #9d1a1a;
 	color: #706e7a;
+}
+
+.text-comida{
+	color: #706e7a;
+}
+
+.carta-extra{
+	width: 30%;
+  	text-align: center;
+  	border-radius: 10px;
+	padding: 30px;
+	margin-right: 1.5%;
+	margin-left: 1.5%;
+	margin-top: 3%;
+	margin-bottom: 2%;
+	background-color: #87307d;
+}
+
+.recomendados-extra{
+	font-family: "Garamond", serif, monospace;
+	background-color:  #87307d;
+	text-align: center;
+	opacity: 90%;
+	margin-top: 3%;
 }
